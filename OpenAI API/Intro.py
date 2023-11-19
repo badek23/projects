@@ -8,7 +8,7 @@ import streamlit as st
 # Sidebar
 st.sidebar.success("Select a page above.")
 
-# Main Content
+# Main content
 st.title('AI and Big Data in Business Strategy')
 st.header('A Course for the Future')
 

@@ -1,3 +1,4 @@
+# Installations and imports
 #pip install streamlit
 #pip install python-dateutil
 #pip install "pyzmq==17.0.0" "ipykernel==4.8.2"
@@ -6,6 +7,7 @@ import streamlit as st
 import openai
 import os
 
+# Main content
 st.sidebar.success("Select a page above.")
 
 st.title('AI and Big Data in Business Strategy')
@@ -18,10 +20,13 @@ st.markdown(
     """
 )
 
+# Insert environmental variable that links to your OpenAI Key (configured on your computer)
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
+# User input
 user_input = st.text_input('What is your query?')
 
+# AI response
 if st.button('Submit here.'):
     response = openai.Completion.create(
         engine="text-davinci-003",
