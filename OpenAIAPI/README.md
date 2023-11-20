@@ -13,4 +13,4 @@ This project relies on the utilization of an OpenAI key. Once you possess one, u
 The next step in the development of this code is to add in the ability for the bot to "remember" a dialogue. This can be accomplished by adding a list to which dictionaries (for both user input and bot responses) can be appended; the bot can then be instructed to look at this list in addition to new user input.
 
 ### Deployed app
-The deployed app URL is: https://ai-business-strategy.streamlit.app/
+The deployed app URL is: https://ai-business-strategy.streamlit.app/ . Note that this deployment is for observational purposes only; as environmental variables are stored on local host, the deployment cannot read your personal OpenAI API key. See section "How to run" to run the app on your local host.
